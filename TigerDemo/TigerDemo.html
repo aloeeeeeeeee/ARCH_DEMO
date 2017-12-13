@@ -66,19 +66,11 @@
 			.btn {
 				font-family: 'Lato';
 				font-size: 16px;
+				margin-top: 30px;
 			}
 
 			#controls {
 				text-align : center;
-			}
-
-			#emotion_container {
-				width: 300px;
-				height: 180px;
-			}
-
-			#emotion_icons {
-				height: 180px;
 			}
 
 			.emotion_icon {
@@ -90,12 +82,6 @@
 				top:0px;
 			}
 
-
-			#emotion_chart {
-				margin-top: 0px;
-				height: 0px;
-
-			}
 
 			#icon1, #icon2, #icon3, #icon4, #icon5, #icon6 {
 				visibility : hidden;
@@ -147,15 +133,12 @@
 				</video>
 				<canvas id="overlay" width="400" height="300"></canvas>
 			</div>
-			<div id="emotion_container">
 				<div id="emotion_icons">
 					<img class="emotion_icon" id="icon1" src="./media/icon_angry.png">
 					<img class="emotion_icon" id="icon2" src="./media/icon_sad.png">
 					<img class="emotion_icon" id="icon3" src="./media/icon_surprised.png">
 					<img class="emotion_icon" id="icon4" src="./media/icon_happy.png">
 				</div>
-				<div id='emotion_chart'></div>
-			</div>
 			<div id="controls">
 				<input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
 			</div>
